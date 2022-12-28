@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Spread operator!!</h1>
+    <script>
+        console.log("The min of 1,2,3:",Math.min(1,2,3));
+        let arr = [1,2,3,4,5];
+        console.log("The min array without spread:",Math.min(arr));
+        console.log("The min array with spread:",Math.min(...arr));
+
+        let arr1 = [4,5,6,7];
+        let arr2 = [4,6,8,9];
+        console.log("Min of arr1 and arr2:",Math.min(...arr1,...arr2));
+        console.log("Max of arr1 and arr2:",Math.max(...arr1,...arr2));
+        console.log("Min of arr1 and arr2 and more :",Math.min(...arr1,0,...arr2,3));
+
+        let arr3 = [...arr1,32,...arr2,10];
+        console.log("Array created by combining two arrys:\n",arr3);
+
+        let str = "Jyoti chaudhary";
+        console.log("String",str);
+        console.log("String with spread: ",[...str]);
+    </script>
+</body>
+</html>
